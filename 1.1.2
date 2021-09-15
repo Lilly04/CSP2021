@@ -1,1 +1,19 @@
+# import the turtle module
+import turtle as trtl
 
+# create the turtle object
+painter = trtl.Turtle()
+
+print("making a circle...")
+painter.pensize(10)
+# ask user for a color (such as red, green, blue, pink, purple)
+Color=input("what color do you like?")
+painter.color(Color)
+# ask user for the radius of a circle
+r=int(input("what would you like the radius to be?"))
+# draw a circle with the radius and line color entered by the user
+painter.circle(r)
+
+# get the screen object and make it persist
+wn = trtl.Screen()
+wn.mainloop()
