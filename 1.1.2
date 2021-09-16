@@ -1,19 +1,91 @@
-# import the turtle module
+#   Add your code here and add comments to your code 
+#   to describe what each section of code is doing
+
+# import turtle module
 import turtle as trtl
 
-# create the turtle object
+# create turtle object
 painter = trtl.Turtle()
 
-print("making a circle...")
+# adjust pensize, penup, (-110,-10)
 painter.pensize(10)
-# ask user for a color (such as red, green, blue, pink, purple)
-Color=input("what color do you like?")
-painter.color(Color)
-# ask user for the radius of a circle
-r=int(input("what would you like the radius to be?"))
-# draw a circle with the radius and line color entered by the user
-painter.circle(r)
+painter.penup()
+painter.goto(-150,-10)
+painter.pendown()
 
-# get the screen object and make it persist
+# first pentagram
+painter.fillcolor("red")
+painter.begin_fill()
+painter.circle(40,360, 6)
+painter.end_fill()
+
+# penup, (-60,0)
+painter.penup()
+painter.goto(-100,0)
+painter.pendown()
+
+# second pentagram
+painter.fillcolor("orange")
+painter.begin_fill()
+painter.circle(40,360, 6)
+painter.end_fill()
+
+# penup, (-10,10)
+painter.penup()
+painter.goto(-50,10)
+painter.pendown()
+
+# third pentagram
+painter.fillcolor("yellow")
+painter.begin_fill()
+painter.circle(40,360, 6)
+painter.end_fill()
+
+
+# penup, (200,10)
+painter.penup()
+painter.goto(160,-10)
+painter.pendown()
+
+# seventh pentagram
+painter.fillcolor("pink")
+painter.begin_fill()
+painter.circle(40,360, 6)
+painter.end_fill()
+
+# penup, (140,10)
+painter.penup()
+painter.goto(100,0)
+painter.pendown()
+
+# sixth pentagram
+painter.fillcolor("purple")
+painter.begin_fill()
+painter.circle(40,360, 6)
+painter.end_fill()
+
+# penup, (90,10)
+painter.penup()
+painter.goto(50,10)
+painter.pendown()
+
+# fifth pentagram
+painter.fillcolor("green")
+painter.begin_fill()
+painter.circle(40,360, 6)
+painter.end_fill()
+
+# penup, (40,10)
+painter.penup()
+painter.goto(0,20)
+painter.pendown()
+
+# forth pentagram
+painter.fillcolor("blue")
+painter.begin_fill()
+painter.circle(40,360, 6)
+painter.end_fill()
+
+# create screen object and make it persist
 wn = trtl.Screen()
 wn.mainloop()
