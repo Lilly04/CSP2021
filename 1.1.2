@@ -86,6 +86,21 @@ painter.begin_fill()
 painter.circle(40,360, 6)
 painter.end_fill()
 
+# penup, (0,-80)
+painter.penup()
+painter.goto(0,-100)
+painter.pendown()
+
+#Ask for the color of a square
+c=input("What color would you like your pen?")
+painter.color(c)
+f=input("what color would you like your square?")
+painter.fillcolor(f)
+painter.begin_fill()
+r=int(input("How big would you your square?"))
+painter.circle(r,360, 4)
+painter.end_fill()
+
 # create screen object and make it persist
 wn = trtl.Screen()
 wn.mainloop()
