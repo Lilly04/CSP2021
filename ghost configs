@@ -1,0 +1,40 @@
+#ghost configerations
+# import turtle module
+import turtle as trtl
+
+# create turtle object
+ghost = trtl.Turtle()
+
+ghost.pensize(5)
+
+ghost.penup()
+ghost.goto(0,155)
+ghost.pendown()
+ghost.left(90)
+ghost.circle(40,180)
+ghost.left(90)
+ghost.forward(80)
+ghost.right(90)
+ghost.forward(40)
+ghost.penup()
+ghost.goto(-80,155)
+ghost.pendown()
+ghost.forward(40)
+ghost.left(90)
+ghost.forward(80)
+ghost.right(90)
+ghost.forward(40)
+ghost.goto(-80,75)
+ghost.backward(40)
+ghost.penup()
+ghost.forward(40)
+ghost.pendown()
+ghost.forward(20)
+ghost.circle(10,180)
+ghost.forward(1)
+ghost.circle(10,180)
+ghost.forward(1)
+ghost.circle(10,180)
+ghost.forward(1)
+ghost.circle(10,180)
+ghost.forward(20)
