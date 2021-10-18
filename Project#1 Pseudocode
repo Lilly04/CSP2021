@@ -1,0 +1,7 @@
+#ghost configerations
+
+# import turtle module
+import turtle as trtl
+
+# create turtle object
+ghost = trtl.Turtle()
