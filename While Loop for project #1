@@ -1,0 +1,20 @@
+# While Loop for Project #1
+# import turtle module
+import turtle as trtl
+
+#Create Ghost backround
+ghost = trtl.Turtle()
+ghost.pensize(2.5)
+ghost.goto(-200,0)
+
+ghost.fillcolor("orange")
+ghost.begin_fill()
+
+count=0
+while(count<4):
+  ghost.forward(50)
+  ghost.circle(50,360,3)
+  ghost.forward(50)
+  count=count+1
+  
+ghost.end_fill()
