@@ -4,37 +4,72 @@ import turtle as trtl
 
 # create turtle object
 ghost = trtl.Turtle()
+ghost.pensize(2.5)
 
-ghost.pensize(5)
-
+# Ghost_1 Section 1
 ghost.penup()
 ghost.goto(0,155)
 ghost.pendown()
+ghost.fillcolor("black")
+ghost.begin_fill()
 ghost.left(90)
-ghost.circle(40,180)
+ghost.circle(20,180)
+ghost.end_fill()
+
+#Ghost_1 Section 2
+ghost.pencolor("gray")
+ghost.fillcolor("gray")
+ghost.begin_fill()
 ghost.left(90)
-ghost.forward(80)
+ghost.forward(40)
 ghost.right(90)
-ghost.forward(40)
+ghost.forward(20)
 ghost.penup()
-ghost.goto(-80,155)
-ghost.pendown()
-ghost.forward(40)
-ghost.left(90)
-ghost.forward(80)
-ghost.right(90)
-ghost.forward(40)
-ghost.goto(-80,75)
-ghost.backward(40)
-ghost.penup()
-ghost.forward(40)
+
+#Ghost_1 Section 3
+ghost.goto(-40,155)
 ghost.pendown()
 ghost.forward(20)
-ghost.circle(10,180)
-ghost.forward(1)
-ghost.circle(10,180)
-ghost.forward(1)
-ghost.circle(10,180)
-ghost.forward(1)
-ghost.circle(10,180)
+ghost.left(90)
+
+ghost.forward(40)
+ghost.right(90)
+ghost.end_fill()
+
+#Ghost_1 Section 4
+ghost.pencolor("black")
 ghost.forward(20)
+ghost.goto(-40,115)
+ghost.backward(20)
+ghost.penup()
+ghost.forward(20)
+ghost.pendown()
+
+#Ghost_1 Section 5
+ghost.pencolor("purple")
+ghost.fillcolor("purple")
+ghost.begin_fill()
+ghost.forward(10)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.forward(10)
+ghost.end_fill()
+
+#Ghost_1 Eye_1
+ghost.penup()
+ghost.goto(-10,160)
+ghost.pencolor("white")
+ghost.pendown()
+ghost.circle(2)
+
+#Ghost_1 Eye_2
+ghost.penup()
+ghost.goto(-25,160)
+ghost.pencolor("white")
+ghost.pendown()
+ghost.circle(2)
