@@ -34,9 +34,122 @@ while(x<4):
   x=x+1
 ghost.end_fill()
 
+#Ghost_13(upper left corner) = bisexual ghost
+# Ghost_13 Section 1
+ghost.penup()
+ghost.pencolor("black")
+ghost.goto(-100,145)
+ghost.pendown()
+ghost.fillcolor("deep pink")
+ghost.begin_fill()
+ghost.left(90)
+ghost.circle(20,180)
+ghost.end_fill()
+
+#Ghost_13 Section 2
+ghost.fillcolor("dark magenta")
+ghost.begin_fill()
+ghost.left(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(25)
+ghost.right(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(25)
+ghost.right(180)
+ghost.forward(25)
+ghost.end_fill()
+
+#Ghost_13 Section 3
+ghost.fillcolor("navy")
+ghost.begin_fill()
+ghost.forward(25)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.forward(25)
+ghost.end_fill()
+
+#Ghost_13 Eye_1
+ghost.penup()
+ghost.goto(-110,150)
+ghost.pencolor("white")
+ghost.pendown()
+ghost.circle(2)
+
+#Ghost_13 Eye_2
+ghost.penup()
+ghost.goto(-125,150)
+ghost.pencolor("black")
+ghost.pendown()
+ghost.circle(2)
+
+#Ghost_14(upper right corner) = pan ghost
+#Ghost_14 Section 1
+ghost.penup()
+ghost.right(90)
+ghost.pencolor("black")
+ghost.goto(130,145)
+ghost.pendown()
+ghost.fillcolor("deep pink")
+ghost.begin_fill()
+ghost.left(90)
+ghost.circle(20,180)
+ghost.end_fill()
+
+#Ghost_14 Section 2
+ghost.fillcolor("yellow")
+ghost.begin_fill()
+ghost.left(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(25)
+ghost.right(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(25)
+ghost.right(180)
+ghost.forward(25)
+ghost.end_fill()
+
+#Ghost_14 Section 3
+ghost.fillcolor("medium blue")
+ghost.begin_fill()
+ghost.forward(25)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.forward(25)
+ghost.end_fill()
+
+#Ghost_14 Eye_1
+ghost.penup()
+ghost.goto(120,150)
+ghost.pencolor("black")
+ghost.pendown()
+ghost.circle(2)
+
+#Ghost_14 Eye_2
+ghost.penup()
+ghost.goto(105,150)
+ghost.pencolor("white")
+ghost.pendown()
+ghost.circle(2)
+
 #Ghost_1 = LGBTQ+ Ghost
 # Ghost_1 Section 1
 ghost.penup()
+ghost.pencolor("black")
+ghost.right(90)
 ghost.goto(15,155)
 ghost.pendown()
 ghost.fillcolor("red")
@@ -600,7 +713,7 @@ ghost.circle(2)
 #Ghost_6 Eye_2
 ghost.penup()
 ghost.goto(125,85)
-ghost.pencolor("white")
+ghost.pencolor("black")
 ghost.pendown()
 ghost.circle(2)
 
@@ -712,7 +825,7 @@ ghost.circle(2)
 #Ghost_7 Eye_2
 ghost.penup()
 ghost.goto(-130,85)
-ghost.pencolor("white")
+ghost.pencolor("black")
 ghost.pendown()
 ghost.circle(2)
 
@@ -999,14 +1112,14 @@ ghost.end_fill()
 #Ghost_10 Eye_1
 ghost.penup()
 ghost.goto(50,-15)
-ghost.pencolor("white")
+ghost.pencolor("black")
 ghost.pendown()
 ghost.circle(2)
 
 #Ghost_10 Eye_2
 ghost.penup()
 ghost.goto(35,-15)
-ghost.pencolor("white")
+ghost.pencolor("black")
 ghost.pendown()
 ghost.circle(2)
 
@@ -1111,23 +1224,282 @@ ghost.end_fill()
 #Ghost_11 Eye_1
 ghost.penup()
 ghost.goto(-40,-15)
-ghost.pencolor("white")
+ghost.pencolor("black")
 ghost.pendown()
 ghost.circle(2)
 
 #Ghost_11 Eye_2
 ghost.penup()
 ghost.goto(-55,-15)
-ghost.pencolor("white")
+ghost.pencolor("black")
 ghost.pendown()
 ghost.circle(2)
 
 #Ghost_12 = genderqueer ghost
+# Ghost_12 Section 1
+ghost.penup()
+ghost.right(90)
+ghost.pencolor("black")
+ghost.goto(15,-55)
+ghost.pendown()
+ghost.fillcolor("medium orchid")
+ghost.begin_fill()
+ghost.left(90)
+ghost.circle(20,180)
+ghost.end_fill()
 
-#Ghost_13(upper left corner) = bisexual ghost
+#Ghost_12 Section 2
+ghost.fillcolor("ghost white")
+ghost.begin_fill()
+ghost.left(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(25)
+ghost.right(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(25)
+ghost.right(180)
+ghost.forward(25)
+ghost.end_fill()
 
-#Ghost_14(upper right corner) = pan ghost
+#Ghost_12 Section 3
+ghost.fillcolor("olive drab")
+ghost.begin_fill()
+ghost.forward(25)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.forward(25)
+ghost.end_fill()
+
+#Ghost_12 Eye_1
+ghost.penup()
+ghost.goto(5,-45)
+ghost.pencolor("white")
+ghost.pendown()
+ghost.circle(2)
+
+#Ghost_12 Eye_2
+ghost.penup()
+ghost.goto(-10,-45)
+ghost.pencolor("white")
+ghost.pendown()
+ghost.circle(2)
 
 #Ghost_15(lower left corner) = omnisexual ghost
+# Ghost_15 Section 1
+ghost.penup()
+ghost.right(90)
+ghost.pencolor("black")
+ghost.goto(-100, -45)
+ghost.pendown()
+ghost.fillcolor("hot pink")
+ghost.begin_fill()
+ghost.left(90)
+ghost.circle(20,180)
+ghost.end_fill()
+
+#Ghost_15 Section 2
+ghost.fillcolor("deep pink")
+ghost.begin_fill()
+ghost.left(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(15)
+ghost.right(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(15)
+ghost.right(180)
+ghost.forward(15)
+ghost.end_fill()
+
+#Ghost_15 Section 3
+ghost.fillcolor("black")
+ghost.begin_fill()
+ghost.left(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(15)
+ghost.right(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(15)
+ghost.right(180)
+ghost.forward(15)
+ghost.end_fill()
+
+#Ghost_15 Section 4
+ghost.fillcolor("indigo")
+ghost.begin_fill()
+ghost.left(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(15)
+ghost.right(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(15)
+ghost.right(180)
+ghost.forward(15)
+ghost.end_fill()
+
+#Ghost_15 Section 5
+ghost.fillcolor("medium purple")
+ghost.begin_fill()
+ghost.forward(20)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.forward(20)
+ghost.end_fill()
+
+#Ghost_15 Eye_1
+ghost.penup()
+ghost.goto(-110,-35)
+ghost.pencolor("white")
+ghost.pendown()
+ghost.circle(2)
+
+#Ghost_15 Eye_2
+ghost.penup()
+ghost.goto(-125,-35)
+ghost.pencolor("black")
+ghost.pendown()
+ghost.circle(2)
 
 #Ghost_16(lower right corner) = polysexual ghost
+#Ghost_16 Section 1
+ghost.penup()
+ghost.right(90)
+ghost.pencolor("black")
+ghost.goto(130,-45)
+ghost.pendown()
+ghost.fillcolor("deep pink")
+ghost.begin_fill()
+ghost.left(90)
+ghost.circle(20,180)
+ghost.end_fill()
+
+#Ghost_16 Section 2
+ghost.fillcolor("lime green")
+ghost.begin_fill()
+ghost.left(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(25)
+ghost.right(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(25)
+ghost.right(180)
+ghost.forward(25)
+ghost.end_fill()
+
+#Ghost_16 Section 3
+ghost.fillcolor("medium aquamarine")
+ghost.begin_fill()
+ghost.forward(25)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.forward(25)
+ghost.end_fill()
+
+#Ghost_16 Eye_1
+ghost.penup()
+ghost.goto(120,-35)
+ghost.pencolor("black")
+ghost.pendown()
+ghost.circle(2)
+
+#Ghost_16 Eye_2
+ghost.penup()
+ghost.goto(105,-35)
+ghost.pencolor("white")
+ghost.pendown()
+ghost.circle(2)
+
+#User_Ghost Q's
+c = input("What color would you like section 1 of your ghost to be?")
+d = input("What color would you like section 2 of your ghost to be?")
+e = input("What color would you like section 3 of your ghost to be?")
+eye1 = input("What color would you like eye 1 of your ghost to be?")
+eye2 = input("What color would you like eye 2 of your ghost to be?")
+
+#User_Ghost section 1
+ghost.penup()
+ghost.pencolor("black")
+ghost.right(90)
+ghost.goto(15,55)
+ghost.pendown()
+ghost.fillcolor(c)
+ghost.begin_fill()
+ghost.left(90)
+ghost.circle(20,180)
+ghost.end_fill()
+
+#User_Ghost Section 2
+ghost.fillcolor(d)
+ghost.begin_fill()
+ghost.left(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(10)
+ghost.right(90)
+ghost.forward(40)
+ghost.right(90)
+ghost.forward(10)
+ghost.right(180)
+ghost.forward(10)
+ghost.end_fill()
+
+#User_Ghost Section 3
+ghost.fillcolor(e)
+ghost.begin_fill()
+ghost.forward(15)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.right(180)
+ghost.circle(5,180)
+ghost.forward(15)
+ghost.end_fill()
+
+#User_Ghost Eye_1
+ghost.penup()
+ghost.goto(5,62.5)
+ghost.pencolor(eye1)
+ghost.pendown()
+ghost.circle(2)
+
+#User_Ghost Eye_2
+ghost.penup()
+ghost.goto(-10,62.5)
+ghost.pencolor(eye2)
+ghost.pendown()
+ghost.circle(2)
+
+
+#get painter out of screen
+ghost.penup()
+ghost.goto(400,0)
+
+#end program
+wn = trtl.Screen()
+wn.mainloop()
