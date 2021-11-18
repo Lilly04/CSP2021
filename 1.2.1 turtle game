@@ -1,0 +1,73 @@
+#1.2.1 catch a turtle game
+# Import Statements
+import turtle as trtl
+liza = trtl.Turtle()
+import random as rand
+import turtle as trtl2
+score_writer = trtl2.Turtle()
+import turtle as trtl3
+counter = trtl3.Turtle()
+
+# Game Configerations
+liza.shape("turtle")
+liza.shapesize(2)
+liza.color("dark olive green")
+score = 0
+
+score_writer.penup()
+score_writer.goto(0,300)
+score_writer.pendown()
+
+font_setup = ("Arial", 20, "normal")
+
+timer = 30
+counter_interval = 1000
+timer_up = False
+
+counter.penup()
+counter.goto(0,240)
+counter.pendown()
+
+#Game Functions
+def liza_clicked(x,y):
+  global timer_up, timer
+  if timer_up != True:
+    print("Liza was clicked")
+    change_position()
+    update_score()
+  else:
+    liza.hideturtle()
+
+
+def change_position():
+    new_ypos=rand.randint(-400,400)
+    new_xpos=rand.randint(-300,300)
+    liza.hideturtle()
+    liza.penup()
+    liza.goto(new_xpos,new_ypos)
+    liza.pendown()
+    liza.showturtle()
+
+def update_score():
+    global score
+    score=score+1
+    score_writer.clear()
+    score_writer.write(score, font=font_setup)
+
+def countdown():
+  global timer, timer_up
+  counter.clear()
+  if timer <= 0:
+    counter.write("Time's Up", font=font_setup)
+    timer_up = True
+  else:
+    counter.write("Timer: " + str(timer), font=font_setup)
+    timer -= 1
+    counter.getscreen().ontimer(countdown, counter_interval) 
+
+#Events
+liza.onclick(liza_clicked)
+wn = trtl.Screen()
+wn.ontimer(countdown, counter_interval)
+wn.bgcolor("light blue")
+wn.mainloop()
