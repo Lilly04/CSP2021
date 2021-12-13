@@ -1,0 +1,16 @@
+#import turtle module
+import turtle as trtle
+import turtle as trtle2
+import turtle as trtle3
+
+#Create turtle objects
+ghost = trtle.Turtle
+ghost_trap = trtle2.Turtle
+ghost_lives =trtle3.Turtle
+
+print("Pick a ussername.")
+ussername = input("What's your ussername?")
+color = input("What's your favorite color?")
+backround = input("What's your second favorite color?")
+
+def moving_ghost():
