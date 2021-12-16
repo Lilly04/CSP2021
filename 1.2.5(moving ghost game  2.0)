@@ -1,0 +1,47 @@
+#import turtle module
+import turtle as trtle
+import turtle as trtle2
+import turtle as trtle3
+
+#Create turtle objects
+ghost = trtle.Turtle()
+ghost_trap = trtle2.Turtle()
+ghost_lives =trtle3.Turtle()
+
+print("Pick a ussername.")
+ussername = input("What's your ussername?")
+color = input("What color would you like your ghost?")
+backround = input("What color do you want the background?")
+
+def moving_ghost():
+    #ghost function
+    #begin ghost varibles
+    ghost.pensize(2.5)
+    ghost.fillcolor(color)
+    ghost.begin_fill()
+    #ghost top
+    ghost.forward(40)
+    ghost.left(90)
+    ghost.circle(20,180)
+    #ghost midsection
+    ghost.forward(30)
+    ghost.left(90)
+    ghost.forward(40)
+    ghost.left(90)
+    ghost.forward(30)
+    ghost.left(90)
+    ghost.forward(40)
+    ghost.left(90)
+    ghost.forward(30)
+    #ghost bottom
+    ghost.forward(20)
+    ghost.circle(5,180)
+    ghost.right(180)
+    ghost.circle(5,180)
+    ghost.right(180)
+    ghost.circle(5,180)
+    ghost.right(180)
+    ghost.circle(5,180)
+    ghost.forward(20)
+    #end ghost varibles
+    ghost.end_fill()
