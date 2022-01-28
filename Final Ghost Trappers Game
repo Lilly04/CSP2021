@@ -1,0 +1,273 @@
+#semester final
+#import turtle module
+import turtle as trtle
+import random as rand
+import time
+
+wn = trtle.Screen()
+wn.bgpic('ghost_trappers_background.gif')
+
+#Create turtle objects
+counter = trtle.Turtle()
+ghost_score = trtle.Turtle()
+instructions = trtle.Turtle()
+ghost_ussername = trtle.Turtle()
+#Create turtle objects -- the ghosts
+
+ghost_red = trtle.Turtle()
+ghost_orange = trtle.Turtle()
+ghost_yellow = trtle.Turtle()
+ghost_green = trtle.Turtle()
+ghost_blue = trtle.Turtle()
+ghost_purple = trtle.Turtle()
+ghost_rainbow = trtle.Turtle()
+
+#Varibles for scoring and timer
+score = 0
+
+ghost_score.penup()
+ghost_score.goto(0,300)
+ghost_score.pendown()
+
+shape_files = ['red_ghost.gif', 'orange_ghost.gif', 'yellow_ghost.gif', 'green_ghost.gif', 'blue_ghost.gif', 'purple_ghost.gif', 'rainbow_ghost.gif']
+
+for s in shape_files:
+  trtle.register_shape(s)
+
+ghost_red.shape("red_ghost.gif")
+ghost_orange.shape("orange_ghost.gif")
+ghost_yellow.shape("yellow_ghost.gif")
+ghost_green.shape("green_ghost.gif")
+ghost_blue.shape("blue_ghost.gif")
+ghost_purple.shape("purple_ghost.gif")
+ghost_rainbow.shape("rainbow_ghost.gif")
+
+#Instructions
+font_setup = ("Arial", 20, "normal")
+
+def Game_Instructions():
+  instructions.penup()
+  instructions.goto(-100,0)
+  instructions.pendown()
+  instructions.write("Welcome Ghost Trapper!", font=font_setup)
+  time.sleep(2.0)
+  instructions.clear()
+  instructions.penup()
+  instructions.goto(-120,0)
+  instructions.pendown()
+  instructions.write("Click on the ghosts to trap them.", font=font_setup)
+  time.sleep(2.0)
+  instructions.clear()
+  instructions.penup()
+  instructions.goto(-180,0)
+  instructions.pendown()
+  instructions.write("Once you start you'll have 30 seconds", font=font_setup)
+  time.sleep(2.0)
+  instructions.clear()
+  instructions.penup()
+  instructions.goto(-100,0)
+  instructions.pendown()
+  instructions.write("Pick a ussername,", font=font_setup)
+  time.sleep(2.0)
+  instructions.clear()
+  instructions.penup()
+  instructions.goto(-100,0)
+  instructions.pendown()
+  instructions.write("Once you finished that,", font=font_setup)
+  time.sleep(2.0)
+  instructions.clear()
+  instructions.penup()
+  instructions.goto(-100,0)
+  instructions.pendown()
+  instructions.write("START GHOST TRAPPING!", font=font_setup)
+  time.sleep(2.0)
+  instructions.clear()
+  instructions.hideturtle()
+
+Game_Instructions()
+
+#Timer Varibles
+timer = 30
+counter_interval = 1000
+timer_up = False
+
+counter.penup()
+counter.goto(0,240)
+counter.pendown()
+
+print("Pick a ussername.")
+ussername = input("What's your ussername? ")
+
+ghost_ussername.penup()
+ghost_ussername.goto(0,200)
+ghost_ussername.pendown()
+ghost_ussername.write(ussername, font=font_setup)
+
+#Ghost_red Functions
+def red_ghost_clicked(x,y):
+  global timer_up, timer
+  if timer_up != True:
+    red_change_position()
+    update_score()
+  else:
+    ghost_red.hideturtle()
+
+def red_change_position():
+    new_ypos=rand.randint(-400,400)
+    new_xpos=rand.randint(-300,300)
+    ghost_red.hideturtle()
+    ghost_red.penup()
+    ghost_red.goto(new_xpos,new_ypos)
+    ghost_red.pendown()
+    ghost_red.showturtle()
+
+#Ghost_orange Functions
+def orange_ghost_clicked(x,y):
+  global timer_up, timer
+  if timer_up != True:
+    orange_change_position()
+    update_score()
+  else:
+    ghost_orange.hideturtle()
+
+def orange_change_position():
+    new_ypos=rand.randint(-400,400)
+    new_xpos=rand.randint(-300,300)
+    ghost_orange.hideturtle()
+    ghost_orange.penup()
+    ghost_orange.goto(new_xpos,new_ypos)
+    ghost_orange.pendown()
+    ghost_orange.showturtle()
+
+#Ghost_yellow Functions
+def yellow_ghost_clicked(x,y):
+  global timer_up, timer
+  if timer_up != True:
+    yellow_change_position()
+    update_score()
+  else:
+    ghost_yellow.hideturtle()
+
+def yellow_change_position():
+    new_ypos=rand.randint(-400,400)
+    new_xpos=rand.randint(-300,300)
+    ghost_yellow.hideturtle()
+    ghost_yellow.penup()
+    ghost_yellow.goto(new_xpos,new_ypos)
+    ghost_yellow.pendown()
+    ghost_yellow.showturtle()
+
+#Ghost_green Functions
+def green_ghost_clicked(x,y):
+  global timer_up, timer
+  if timer_up != True:
+    green_change_position()
+    update_score()
+  else:
+    ghost_green.hideturtle()
+
+def green_change_position():
+    new_ypos=rand.randint(-400,400)
+    new_xpos=rand.randint(-300,300)
+    ghost_green.hideturtle()
+    ghost_green.penup()
+    ghost_green.goto(new_xpos,new_ypos)
+    ghost_green.pendown()
+    ghost_green.showturtle()
+
+#Ghost_blue Functions
+def blue_ghost_clicked(x,y):
+  global timer_up, timer
+  if timer_up != True:
+    blue_change_position()
+    update_score()
+  else:
+    ghost_blue.hideturtle()
+
+def blue_change_position():
+    new_ypos=rand.randint(-400,400)
+    new_xpos=rand.randint(-300,300)
+    ghost_blue.hideturtle()
+    ghost_blue.penup()
+    ghost_blue.goto(new_xpos,new_ypos)
+    ghost_blue.pendown()
+    ghost_blue.showturtle()
+
+#Ghost_purple Functions
+def purple_ghost_clicked(x,y):
+  global timer_up, timer
+  if timer_up != True:
+    purple_change_position()
+    update_score()
+  else:
+    ghost_purple.hideturtle()
+
+def purple_change_position():
+    new_ypos=rand.randint(-400,400)
+    new_xpos=rand.randint(-300,300)
+    ghost_purple.hideturtle()
+    ghost_purple.penup()
+    ghost_purple.goto(new_xpos,new_ypos)
+    ghost_purple.pendown()
+    ghost_purple.showturtle()
+
+#Ghost_rainbow Functions
+def rainbow_ghost_clicked(x,y):
+  global timer_up, timer
+  if timer_up != True:
+    rainbow_change_position()
+    update_score()
+  else:
+    ghost_rainbow.hideturtle()
+
+def rainbow_change_position():
+    new_ypos=rand.randint(-400,400)
+    new_xpos=rand.randint(-300,300)
+    ghost_rainbow.hideturtle()
+    ghost_rainbow.penup()
+    ghost_rainbow.goto(new_xpos,new_ypos)
+    ghost_rainbow.pendown()
+    ghost_rainbow.showturtle()
+
+#game_functions
+def Ghost_time():
+  global timer, timer_up
+  counter.clear()
+  if timer <= 0:
+    counter.write("Time's Up", font=font_setup)
+    timer_up = True
+  else:
+    counter.write("Timer: " + str(timer), font=font_setup)
+    timer = timer - 1
+    counter.getscreen().ontimer(countdown, counter_interval) 
+
+
+def update_score():
+    global score
+    score=score+1
+    ghost_score.clear()
+    ghost_score.write(score, font=font_setup)
+
+def countdown():
+  global timer, timer_up
+  counter.clear()
+  if timer <= 0:
+    counter.write("Time's Up", font=font_setup)
+    timer_up = True
+  else:
+    counter.write("Timer: " + str(timer), font=font_setup)
+    timer -= 1
+    counter.getscreen().ontimer(countdown, counter_interval) 
+
+#End it
+ghost_red.onclick(red_ghost_clicked)
+ghost_orange.onclick(orange_ghost_clicked)
+ghost_yellow.onclick(yellow_ghost_clicked)
+ghost_green.onclick(green_ghost_clicked)
+ghost_blue.onclick(blue_ghost_clicked)
+ghost_purple.onclick(purple_ghost_clicked)
+ghost_rainbow.onclick(rainbow_ghost_clicked)
+
+
+wn.ontimer(countdown, counter_interval)
+wn.mainloop()
