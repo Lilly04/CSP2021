@@ -1,0 +1,43 @@
+import matplotlib.pyplot as plt
+import pandas as pd
+
+temp_data = pd.read_csv("temperature_data.csv", header=0)   # identify the header row
+
+plt.plot(temp_data['Year'], temp_data['Anomaly'], color='gray')
+plt.ylabel('Temperature Anomalies in Celsius')
+plt.xlabel('Years')
+plt.title('Change in Temperatures')
+
+plt.plot(temp_data['Year'], temp_data['LOWESS'], color='purple')
+plt.ylabel('Temperature Anomalies in Celsius')
+plt.xlabel('Years')
+plt.title('Change in Temperatures')
+plt.show()
+
+plt.bar(temp_data['Year'], temp_data['Anomaly'], align='center', color='blue')
+plt.ylabel('Temperature Anomalies in Celsius')
+plt.xlabel('Years')
+plt.title('Change in Temperatures')
+plt.show()
+
+
+min_anomaly = temp_data['Anomaly'][0]
+max_anomaly = temp_data['Anomaly'][0]
+min_year = temp_data['Year'][0]
+max_year = temp_data['Year'][0]
+sum_anomaly = 0
+avg_anomaly = 0
+
+for i in range(len(temp_data['Anomaly'])):
+  if (temp_data['Anomaly'][i] < min_anomaly):
+    min_anomaly = temp_data['Anomaly'][i]
+    min_year = temp_data['Year'][i]
+  if (temp_data['Anomaly'][i] > max_anomaly):
+    max_anomaly = temp_data['Anomaly'][i]
+    max_year = temp_data['Year'][i]
+    sum_anomaly = sum_anomaly + temp_data['Anomaly'][i]
+    avg_anomaly = sum_anomaly/len(temp_data['Anomaly'])
+
+print("The maximum anomaly is:", max_anomaly, "which occured in", max_year)
+print("The minimum anomaly is:", min_anomaly, "which occured in", min_year)
+print("The average anomaly is:", avg_anomaly)
